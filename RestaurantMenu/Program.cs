@@ -2,13 +2,17 @@
 
 namespace RestaurantMenu
 {
-    class MainClass
+    internal class MainClass
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            MenuItem borger = new MenuItem("Borger", 4.20, "Tasty Borger", "Borger", true);
-
-            Console.WriteLine(borger.Description);
+            Menu menu = new Menu("Adam's Restaurant");
+            Item item1 = new Item("Turkey Taco", "Main Course", "Gobble Gobble", 12.99);
+            Item item2 = new Item("Turkey Sandwich", "Main Course", "Gobble Gobble Gobble", 12.99);
+            Item item3 = new Item("Turkey Taco Salad", "Main Course", "Gobble Gobble Gobble Gobble", 12.99);            
+            menu.Items.Add(item1);
+            menu.Items.Add(item2);
+            menu.Items.Add(item3);
         }
     }
 }

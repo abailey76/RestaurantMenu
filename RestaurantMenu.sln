@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.14
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu", "RestaurantMenu\RestaurantMenu.csproj", "{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}"
 EndProject
@@ -11,8 +11,8 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}.Release|anycpu.ActiveCfg = Release|anycpu
 		{A3E827D8-D0A7-4CC8-AFAE-544CEFD6770B}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
