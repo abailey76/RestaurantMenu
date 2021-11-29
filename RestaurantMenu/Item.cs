@@ -13,11 +13,12 @@ namespace RestaurantMenu
 
         public double Price { get; set; }
 
-        public DateTime dateTime { get; }
+        public DateTime DateTime { get; }
 
         public bool IsNew { get; set; }
 
         public static List<string> categoryOptions = new List<string> { "Appetizer", "Main Course", "Dessert" };
+        internal bool isNew;
 
         public Item(string name, string category, string description, double price, bool isNew)
         {
@@ -25,7 +26,7 @@ namespace RestaurantMenu
             Category = category;
             Description = description;
             Price = price;
-            dateTime = DateTime.Now;
+            DateTime = DateTime.Now;
             IsNew = isNew;
         }
 
@@ -35,8 +36,30 @@ namespace RestaurantMenu
             Category = category;
             Description = description;
             Price = price;
-            dateTime = DateTime.Now;
+            DateTime = DateTime.Now;
             IsNew = false;
+        }
+
+        public override string ToString()
+        {
+            if (IsNew)
+            {
+                return $"{Name} {Description} ${Price} **!!NEW ITEM!!**";
+            } 
+            else
+            {
+                return $"{Name} {Description} ${Price}";
+            }
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }
